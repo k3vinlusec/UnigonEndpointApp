@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE638DB52578A8F00038E818 /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = EEBE18C7256796800090256F /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EEAA9965256DE43F00A076F7 /* SharedIPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE19112567987E0090256F /* SharedIPC.swift */; };
+		EEAA996B256DEA3500A076F7 /* IPCConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA996A256DEA3500A076F7 /* IPCConnectionDelegate.swift */; };
+		EEAA9B642575FCC900A076F7 /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAA9B632575FCC900A076F7 /* db.swift */; };
+		EEBE18B72567964F0090256F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBE18B62567964F0090256F /* Assets.xcassets */; };
+		EEBE18CA256796800090256F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE18C9256796800090256F /* NetworkExtension.framework */; };
+		EEBE18CD256796800090256F /* FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE18CC256796800090256F /* FilterDataProvider.swift */; };
+		EEBE18CF256796800090256F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE18CE256796800090256F /* main.swift */; };
+		EEBE19122567987E0090256F /* SharedIPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE19112567987E0090256F /* SharedIPC.swift */; };
+		EEBE191B2568C3610090256F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE18C9256796800090256F /* NetworkExtension.framework */; };
+		EEBE192A2568C9400090256F /* SystemExtensionLoadRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE19292568C9400090256F /* SystemExtensionLoadRequestDelegate.swift */; };
+		EEBE195E256969160090256F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE195D256969160090256F /* main.swift */; };
+		EEBE1A8D256A35CB0090256F /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE1A8C256A35CB0090256F /* libbsm.tbd */; };
+		EEBE1AE3256A3FD60090256F /* c-bridge-helper.c in Sources */ = {isa = PBXBuildFile; fileRef = EEBE1AE2256A3FD60090256F /* c-bridge-helper.c */; };
+		EEBE1AE8256A41650090256F /* libproc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBE1AE7256A41640090256F /* libproc.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE638DB62578A8F00038E818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEBE18A72567964D0090256F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBE18C6256796800090256F;
+			remoteInfo = UnigonEndpointNExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE638DB82578A8F00038E818 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				EE638DB52578A8F00038E818 /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EEAA996A256DEA3500A076F7 /* IPCConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCConnectionDelegate.swift; sourceTree = "<group>"; };
+		EEAA9B632575FCC900A076F7 /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		EEBE18AF2567964D0090256F /* UnigonEndpointApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnigonEndpointApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBE18B62567964F0090256F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBE18BB2567964F0090256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBE18BC2567964F0090256F /* UnigonEndpointApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnigonEndpointApp.entitlements; sourceTree = "<group>"; };
+		EEBE18C7256796800090256F /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBE18C9256796800090256F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		EEBE18CC256796800090256F /* FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataProvider.swift; sourceTree = "<group>"; };
+		EEBE18CE256796800090256F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EEBE18D0256796800090256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBE18D1256796800090256F /* UnigonEndpointNExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnigonEndpointNExtension.entitlements; sourceTree = "<group>"; };
+		EEBE19112567987E0090256F /* SharedIPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedIPC.swift; sourceTree = "<group>"; };
+		EEBE19292568C9400090256F /* SystemExtensionLoadRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtensionLoadRequestDelegate.swift; sourceTree = "<group>"; };
+		EEBE195D256969160090256F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EEBE1975256981350090256F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBE197A256981350090256F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBE1997256981BF0090256F /* SystemRequestDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemRequestDelegate.m; sourceTree = "<group>"; };
+		EEBE199F256981D20090256F /* SystemRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemRequestDelegate.h; sourceTree = "<group>"; };
+		EEBE19BA2569846B0090256F /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		EEBE19EE2569E3550090256F /* TestApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TestApp.entitlements; sourceTree = "<group>"; };
+		EEBE1A8C256A35CB0090256F /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		EEBE1AD7256A3F8B0090256F /* UnigonEndpointNExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnigonEndpointNExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		EEBE1AE1256A3FD60090256F /* c-bridge-helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c-bridge-helper.h"; sourceTree = "<group>"; };
+		EEBE1AE2256A3FD60090256F /* c-bridge-helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "c-bridge-helper.c"; sourceTree = "<group>"; };
+		EEBE1AE7256A41640090256F /* libproc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libproc.tbd; path = usr/lib/libproc.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEBE18AC2567964D0090256F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBE191B2568C3610090256F /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBE18C4256796800090256F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBE1AE8256A41650090256F /* libproc.tbd in Frameworks */,
+				EEBE1A8D256A35CB0090256F /* libbsm.tbd in Frameworks */,
+				EEBE18CA256796800090256F /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEBE18A62567964D0090256F = {
+			isa = PBXGroup;
+			children = (
+				EEBE18B12567964D0090256F /* UnigonEndpointApp */,
+				EEBE18CB256796800090256F /* UnigonEndpointNExtension */,
+				EEBE196E256981320090256F /* TestApp */,
+				EEBE18C8256796800090256F /* Frameworks */,
+				EEBE18B02567964D0090256F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEBE18B02567964D0090256F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE18AF2567964D0090256F /* UnigonEndpointApp.app */,
+				EEBE18C7256796800090256F /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEBE18B12567964D0090256F /* UnigonEndpointApp */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE18B62567964F0090256F /* Assets.xcassets */,
+				EEBE18BB2567964F0090256F /* Info.plist */,
+				EEBE18BC2567964F0090256F /* UnigonEndpointApp.entitlements */,
+				EEBE19292568C9400090256F /* SystemExtensionLoadRequestDelegate.swift */,
+				EEBE195D256969160090256F /* main.swift */,
+				EEAA996A256DEA3500A076F7 /* IPCConnectionDelegate.swift */,
+				EEAA9B632575FCC900A076F7 /* db.swift */,
+			);
+			path = UnigonEndpointApp;
+			sourceTree = "<group>";
+		};
+		EEBE18C8256796800090256F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE1AE7256A41640090256F /* libproc.tbd */,
+				EEBE1A8C256A35CB0090256F /* libbsm.tbd */,
+				EEBE18C9256796800090256F /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEBE18CB256796800090256F /* UnigonEndpointNExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE18CC256796800090256F /* FilterDataProvider.swift */,
+				EEBE18CE256796800090256F /* main.swift */,
+				EEBE19112567987E0090256F /* SharedIPC.swift */,
+				EEBE18D0256796800090256F /* Info.plist */,
+				EEBE18D1256796800090256F /* UnigonEndpointNExtension.entitlements */,
+				EEBE1AD7256A3F8B0090256F /* UnigonEndpointNExtension-Bridging-Header.h */,
+				EEBE1AE1256A3FD60090256F /* c-bridge-helper.h */,
+				EEBE1AE2256A3FD60090256F /* c-bridge-helper.c */,
+			);
+			path = UnigonEndpointNExtension;
+			sourceTree = "<group>";
+		};
+		EEBE196E256981320090256F /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE19EE2569E3550090256F /* TestApp.entitlements */,
+				EEBE19BA2569846B0090256F /* main.mm */,
+				EEBE1975256981350090256F /* Assets.xcassets */,
+				EEBE197A256981350090256F /* Info.plist */,
+				EEBE1997256981BF0090256F /* SystemRequestDelegate.m */,
+				EEBE199F256981D20090256F /* SystemRequestDelegate.h */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEBE18AE2567964D0090256F /* UnigonEndpointApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBE18BF2567964F0090256F /* Build configuration list for PBXNativeTarget "UnigonEndpointApp" */;
+			buildPhases = (
+				EEBE18AB2567964D0090256F /* Sources */,
+				EEBE18AC2567964D0090256F /* Frameworks */,
+				EEBE18AD2567964D0090256F /* Resources */,
+				EE638DB82578A8F00038E818 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE638DB72578A8F00038E818 /* PBXTargetDependency */,
+			);
+			name = UnigonEndpointApp;
+			productName = UnigonEndpointApp;
+			productReference = EEBE18AF2567964D0090256F /* UnigonEndpointApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEBE18C6256796800090256F /* UnigonEndpointNExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBE18D5256796800090256F /* Build configuration list for PBXNativeTarget "UnigonEndpointNExtension" */;
+			buildPhases = (
+				EEBE18C3256796800090256F /* Sources */,
+				EEBE18C4256796800090256F /* Frameworks */,
+				EEBE18C5256796800090256F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnigonEndpointNExtension;
+			productName = UnigonEndpointNExtension;
+			productReference = EEBE18C7256796800090256F /* com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEBE18A72567964D0090256F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					EEBE18AE2567964D0090256F = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					EEBE18C6256796800090256F = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = EEBE18AA2567964D0090256F /* Build configuration list for PBXProject "UnigonEndpointApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEBE18A62567964D0090256F;
+			productRefGroup = EEBE18B02567964D0090256F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEBE18AE2567964D0090256F /* UnigonEndpointApp */,
+				EEBE18C6256796800090256F /* UnigonEndpointNExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEBE18AD2567964D0090256F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBE18B72567964F0090256F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBE18C5256796800090256F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEBE18AB2567964D0090256F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAA9965256DE43F00A076F7 /* SharedIPC.swift in Sources */,
+				EEAA996B256DEA3500A076F7 /* IPCConnectionDelegate.swift in Sources */,
+				EEAA9B642575FCC900A076F7 /* db.swift in Sources */,
+				EEBE192A2568C9400090256F /* SystemExtensionLoadRequestDelegate.swift in Sources */,
+				EEBE195E256969160090256F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBE18C3256796800090256F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBE1AE3256A3FD60090256F /* c-bridge-helper.c in Sources */,
+				EEBE18CF256796800090256F /* main.swift in Sources */,
+				EEBE19122567987E0090256F /* SharedIPC.swift in Sources */,
+				EEBE18CD256796800090256F /* FilterDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE638DB72578A8F00038E818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEBE18C6256796800090256F /* UnigonEndpointNExtension */;
+			targetProxy = EE638DB62578A8F00038E818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEBE18BD2567964F0090256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEBE18BE2567964F0090256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EEBE18C02567964F0090256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UnigonEndpointApp/UnigonEndpointApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 534R7W5B9Z;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = UnigonEndpointApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.k3vinlusec.UnigonEndpointApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEBE18C12567964F0090256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UnigonEndpointApp/UnigonEndpointApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 534R7W5B9Z;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = UnigonEndpointApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.k3vinlusec.UnigonEndpointApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EEBE18D6256796800090256F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UnigonEndpointNExtension/UnigonEndpointNExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534R7W5B9Z;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = UnigonEndpointNExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnigonEndpointNExtension/UnigonEndpointNExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEBE18D7256796800090256F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UnigonEndpointNExtension/UnigonEndpointNExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534R7W5B9Z;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = UnigonEndpointNExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.k3vinlusec.UnigonEndpointApp.UnigonEndpointNExtension;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UnigonEndpointNExtension/UnigonEndpointNExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEBE18AA2567964D0090256F /* Build configuration list for PBXProject "UnigonEndpointApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBE18BD2567964F0090256F /* Debug */,
+				EEBE18BE2567964F0090256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBE18BF2567964F0090256F /* Build configuration list for PBXNativeTarget "UnigonEndpointApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBE18C02567964F0090256F /* Debug */,
+				EEBE18C12567964F0090256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBE18D5256796800090256F /* Build configuration list for PBXNativeTarget "UnigonEndpointNExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBE18D6256796800090256F /* Debug */,
+				EEBE18D7256796800090256F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEBE18A72567964D0090256F /* Project object */;
+}
